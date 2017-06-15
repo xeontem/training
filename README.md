@@ -20,7 +20,9 @@ for(let i = 0; i < 10; i++) {
     divWrapper.appendChild(div);
 }
 document.body.appendChild(divWrapper);
+
 /*----------------------- My Bind -----------------------*/
+
 console.log('--------- My Bind ----------------- ');
 
 Function.prototype.myBind = function(cont, arg) {
@@ -42,6 +44,7 @@ console.log('bind: ', plusThree(3));
 console.log('myBind: ', myBindPlusThree(3));
 
 /*-------------------- My New -----------------------*/
+
 console.log('--------- My New ----------------- ');
 function myNew(func, ...args) {
     let instance = Object.create(func.prototype);
@@ -65,6 +68,7 @@ console.dir(NewRabbit);
 console.dir(Myrabbit)
 
 /*-------------------- MyObjectCreate -----------------------*/
+
 console.log('--------- MyObjectCreate ----------------- ');
 Object.prototype.myCreate = function(proto) {
     let Object = function(){};
