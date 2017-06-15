@@ -1,4 +1,4 @@
-//-------------------- Delegation -----------------------
+/*-------------------- Delegation -----------------------*/
 
 document.body.innerHTML = '';
 let divWrapper = document.createElement('div');
@@ -20,7 +20,7 @@ for(let i = 0; i < 10; i++) {
     divWrapper.appendChild(div);
 }
 document.body.appendChild(divWrapper);
-//----------------------- My Bind -----------------------
+/*----------------------- My Bind -----------------------*/
 console.log('--------- My Bind ----------------- ');
 
 Function.prototype.myBind = function(cont, arg) {
@@ -41,7 +41,7 @@ let myBindPlusThree = sum.myBind(null, 3);
 console.log('bind: ', plusThree(3));
 console.log('myBind: ', myBindPlusThree(3));
 
-//-------------------- My New -----------------------
+/*-------------------- My New -----------------------*/
 console.log('--------- My New ----------------- ');
 function myNew(func, ...args) {
     let instance = Object.create(func.prototype);
@@ -64,7 +64,7 @@ let NewRabbit = new Animal('rabbit');
 console.dir(NewRabbit);
 console.dir(Myrabbit)
 
-//-------------------- MyObjectCreate -----------------------
+/*-------------------- MyObjectCreate -----------------------*/
 console.log('--------- MyObjectCreate ----------------- ');
 Object.prototype.myCreate = function(proto) {
     let Object = function(){};
