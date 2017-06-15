@@ -86,3 +86,31 @@ let vasaMyCreated = Object.myCreate(protoObj);
 let vasaObjectCreated =Object.create(protoObj);
 console.dir(vasaObjectCreated);
 console.dir(vasaMyCreated);
+
+/*------------------------- inheritance ----------------------*/
+console.log('------------------------- inheritance ----------------------')
+let Animal1 = function(name) {
+    this.name = name;
+    this.run = function() {
+        console.log('i can run');
+    }
+}
+Animal1.prototype.jump = function() {
+    console.log('i can jump');
+}
+
+let Rabbit1 = function(name) {
+    Animal1.call(this, name);
+    this.lie = function() {
+        console.log('i can lie');
+    };
+}
+Rabbit1.prototype = Animal1.prototype;
+Rabbit1.prototype.fly = function() {
+    console.log('i can fly');
+}
+
+let inheritedRabbit = new Rabbit1('rabbit');
+
+console.dir(inheritedRabbit);
+
