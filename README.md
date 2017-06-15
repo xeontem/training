@@ -88,6 +88,7 @@ console.dir(vasaObjectCreated);
 console.dir(vasaMyCreated);
 
 /*------------------------- inheritance ----------------------*/
+
 console.log('------------------------- inheritance ----------------------')
 let Animal1 = function(name) {
     this.name = name;
