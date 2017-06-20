@@ -115,3 +115,22 @@ let inheritedRabbit = new Rabbit1('rabbit');
 
 console.dir(inheritedRabbit);
 
+/*----------- quickSort --------------------*/
+console.log('----------- quickSort --------------------');
+
+var quicksort = function(array) {
+    if(array.length <= 1) return array;
+    var swapPos = Math.floor((array.length - 1)/2);
+    var swapValue = array[swapPos];
+    var left = [];
+    var right = [];
+    array = array.slice(0, swapPos).concat(array.slice(swapPos + 1));
+    for(var i = 0; i < array.length; i++) {
+        if(array[i] < swapValue) left.push(array[i]);
+        else right.push(array[i]);
+    }
+    return (quicksort(left)).concat([swapValue], quicksort(right));
+}
+
+quicksort([2,9,12,6,3,1,7]);
+
