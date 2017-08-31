@@ -133,4 +133,14 @@ var quicksort = function(array) {
 }
 
 quicksort([2,9,12,6,3,1,7]);
+/*----------- Cookies --------------------*/
+console.log('----------- Cookies --------------------');
 
+let obj = {};
+document.cookie.split('; ').map(cookie => {
+    let eq = cookie.indexOf('=');
+	let key = cookie.slice(0, eq);
+	let value = cookie.slice(eq+1);
+	obj[key] = value;
+})
+console.dir(obj)
