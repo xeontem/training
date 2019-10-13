@@ -1,0 +1,28 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+
+<body>
+
+  <p>Начинаем считать:</p>
+
+  <script>
+	for(;;){
+		function random(max,min){
+			return (min + Math.random() * (max - min));
+		}
+	max = +prompt("Enter max",'');
+	min = +prompt("Enter min",'');
+	alert("Random number < "+ min +" is : " + random(max,min));
+	var again = confirm ("Again?");
+	if(again !== true) break;
+	}
+	
+	
+  </script>
+
+  <p>Кролики посчитаны!</p>
+
+</body>
+
+</html>

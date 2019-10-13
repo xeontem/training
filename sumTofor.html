@@ -1,0 +1,36 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+
+<body>
+
+  <p>Начинаем считать:</p>
+
+  <script>
+	for(;;){
+		function sumTo(x,n){
+		var z=1;
+		var y=1;
+		for(i=0; i<n;i++){
+			z++;
+			y += z;
+			//alert("i= "+i+"; y= "+y);
+		}
+		//alert("x= "+x+" n= "+n);
+		return y;
+		}
+	x = +prompt("Enter x",'');
+	n= x - 1;
+	if(x != 0) alert("summ= "+sumTo(x,n));
+	var again = confirm ("Again?");
+	if(again !== true) break;
+	}
+	
+	
+  </script>
+
+  <p>Кролики посчитаны!</p>
+
+</body>
+
+</html>

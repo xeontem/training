@@ -1,0 +1,28 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+
+<body>
+
+  <p>Начинаем считать:</p>
+
+  <script>
+	for(;;){
+		function random(x){
+			var randnumber = Math.random();
+			return randnumber*x;
+		}
+	x = +prompt("Enter max",'');
+	if(x != 0) alert("Random number < "+x+" is : "+random(x));
+	var again = confirm ("Again?");
+	if(again !== true) break;
+	}
+	
+	
+  </script>
+
+  <p>Кролики посчитаны!</p>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+
+<body>
+
+  <p>Начинаем считать:</p>
+
+  <script>
+	for(;;){
+		function sumPrice(x,y){
+			var digitx = x.length;
+			var digity = y.length;
+			var powx = Math.pow(10, digitx);
+			var powy = Math.pow(10, digity);
+			return (powx>powy) ? ((+x * powx) + (+y*powx))/powx : ((+x * powy) + (+y*powy))/powy;
+			
+		}
+		function simpleSum(x,y){
+			var xx = +x;
+			var yy = +y;
+			return (xx + yy);
+			}
+	x = prompt("Enter price 1: ",'');
+	y = prompt("Enter price 2: ",'');
+	alert("Sum : "+x+" and : "+y+"is : "+sumPrice(x,y)+"$");
+	alert("simpleSum = "+simpleSum(x,y));
+	var again = confirm ("Again?");
+	if(again !== true) break;
+	}
+	
+	
+  </script>
+
+  <p>Кролики посчитаны!</p>
+
+</body>
+
+</html>

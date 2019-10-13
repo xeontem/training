@@ -1,0 +1,30 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+
+<body>
+
+  <p>Начинаем считать:</p>
+
+  <script>
+	for(;;){
+		function checkAge(age){
+		var temp = (age>=18)? true : false;
+		return temp;
+		}
+	age = +prompt("Enter your age",'');
+	var access = checkAge(age);
+	if(access == true) alert("Welcome");
+	else alert("Give up!!!");
+	var again = confirm ("Again?");
+	if(again !== true) break;
+	}
+	
+	
+  </script>
+
+  <p>Кролики посчитаны!</p>
+
+</body>
+
+</html>

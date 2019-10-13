@@ -1,0 +1,36 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+
+<body>
+
+  <p>Начинаем считать:</p>
+
+  <script>
+	for(;;){
+		
+		function getDecimal(x){
+			var lengthX = x.length;//х - строка, lengthX - число
+			var eqX = +x;//eqX - число
+			var integer = eqX.toFixed(0);// integer - целая часть, число
+			var ilength = integer.length;// ilength - длина целой части
+			return  (eqX - integer).toFixed(lengthX - ilength - 1);
+			
+		}
+		
+	x = prompt("Enter x: ",'');
+
+	alert("fractional part of number is: "+ getDecimal(x));
+
+	var again = confirm ("Again?");
+	if(again !== true) break;
+	}
+	
+	
+  </script>
+
+  <p>Кролики посчитаны!</p>
+
+</body>
+
+</html>

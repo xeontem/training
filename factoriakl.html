@@ -1,0 +1,27 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+
+<body>
+
+  <p>Начинаем считать:</p>
+
+  <script>
+	for(;;){
+		function calcFact(x){
+		return (x != 1) ? x * calcFact(x - 1): 1;
+		}
+	x = +prompt("Enter x",'');
+	if(x != 0) alert("Factorial= "+calcFact(x));
+	var again = confirm ("Again?");
+	if(again !== true) break;
+	}
+	
+	
+  </script>
+
+  <p>Кролики посчитаны!</p>
+
+</body>
+
+</html>

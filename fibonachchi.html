@@ -1,0 +1,38 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+
+<body>
+
+  <p>Начинаем считать:</p>
+
+  <script>
+	for(;;){
+		function showFibonachchi(x){
+		if(x == 0 || x == 1) return x;
+		else {
+			var targetPrev = 0;
+			var targetCur = 1;
+			for(var i=0; i<x; i++){
+				var targetNext = targetPrev + targetCur;
+				targetPrev = targetCur;
+				var temp = targetCur;
+				targetCur = targetNext;
+			}
+		return temp;
+		}
+		}
+	x = +prompt("Enter x",'');
+	if(x != 0) alert("Fibonachchi number under position : "+x+" is : "+showFibonachchi(x));
+	var again = confirm ("Again?");
+	if(again !== true) break;
+	}
+	
+	
+  </script>
+
+  <p>Кролики посчитаны!</p>
+
+</body>
+
+</html>

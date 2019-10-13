@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>О лосях</title>
+<script>
+"use strict";
+var menu = {
+  width: 200,
+  height: 300,
+  title: "My menu"
+};
+function multiplyNumeric(obj){
+  for(var key in obj) {
+    if(typeof obj[key] == "number") {
+      obj[key]*=2;
+      };
+    };
+};
+function check(obj){
+  for (var key in obj) alert(key +" : " + obj[key]);
+};
+
+
+
+multiplyNumeric(menu);
+check(menu);
+
+</script>
+
+    </head>
+    <body>
+<div id=tweets>
+        Правда о лосях.
+        <ol>
+            <li>
+                Лось - животное хитрое
+             </li>
+            <li>
+                .. И коварное
+            </li>
+        </ol>
+</div>
+    </body>
+</html>

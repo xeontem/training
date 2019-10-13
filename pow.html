@@ -1,0 +1,32 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+
+<body>
+
+  <p>Начинаем считать:</p>
+
+  <script>
+	for(;;){
+		function pow(x,n){
+			var result = x;
+			for(i=1;i<=n;i++)
+			result *= x;
+		return result;
+		}
+	x = +prompt("Enter x",'');
+	z = +prompt("Enter n","");
+	n = z-1;
+	alert(pow(x,n));
+	var again = confirm ("Again?");
+	if(again !== true) break;
+	}
+	
+	
+  </script>
+
+  <p>Кролики посчитаны!</p>
+
+</body>
+
+</html>
